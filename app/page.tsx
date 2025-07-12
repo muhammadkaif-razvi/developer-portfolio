@@ -18,7 +18,8 @@ export default function Home() {
             <p className="max-w-[540px] mb-9 text-white/80">
               I excel at crafting elegant digital experiences and I am
               proficient in various programming languages and a wide range of
-              technologies.
+              technologies."Note: This is an AI-generated image, not me. I don`t
+              take pictures."
             </p>
             <div className="flex flex-col xl:flex-row items-center  gap-4">
               <Button

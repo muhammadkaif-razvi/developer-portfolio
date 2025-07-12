@@ -48,12 +48,10 @@
 
 :root {
   --radius: 0.625rem;
-  /* --t-accent: #00ff99;
-  --hover:#00e187; */
   --background: #1c1c22;
   --foreground: #fff;
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.147 0.004 49.25);
+  --card: #27272c;
+  --card-foreground:#00ff99;
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.147 0.004 49.25);
   --primary: #1c1c22;

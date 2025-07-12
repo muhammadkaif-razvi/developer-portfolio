@@ -73,7 +73,7 @@ const cardVariants = {
 const ServicesPage = () => {
   return (
     <section className="pb-2 px-4 md:px-8 bg-background text-foreground">
-      <div className="max-w-6xl mx-auto text-center mb-8">
+      <div className="max-w-6xl mx-auto text-center mb-6">
         <h2 className="text-4xl font-bold mb-4">What I Offer</h2>
         <p className="text-muted-foreground">
           Full-stack services for scalable SaaS, e-commerce, and API development.

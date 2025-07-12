@@ -6,12 +6,12 @@ import { useCountUp } from "react-countup";
 // --- Stats Data ---
 const stats = [
   {
-    num: 12,
+    num: 1,
     text: "Years of experience",
-    suffix: "",
+    suffix: "+",
   },
   {
-    num: 250,
+    num: 5,
     text: "Projects completed",
     suffix: "+",
   },
@@ -21,8 +21,8 @@ const stats = [
     suffix: "%",
   },
   {
-    num: 8000,
-    text: "Commits on GitHub",
+    num: 80,
+    text: "Commits on Github",
     suffix: "+",
   },
 ];
