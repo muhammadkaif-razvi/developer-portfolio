@@ -1,6 +1,5 @@
 "use client";
 
-import { div } from "framer-motion/client";
 import { usePathname } from "next/navigation";
 import {
   Sheet,
@@ -12,17 +11,11 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { AlignRight, AlignRightIcon, LucideMenu } from "lucide-react";
+import { AlignRightIcon } from "lucide-react";
 import Link from "next/link";
 
-import {
-  ReactElement,
-  JSXElementConstructor,
-  ReactNode,
-  ReactPortal,
-  Key,
-} from "react";
-import { UrlObject } from "url";
+
+
 import { Button } from "../button";
 
 const links = [

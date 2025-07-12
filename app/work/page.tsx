@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import {
@@ -59,7 +59,7 @@ const WorkPage = () => {
       <section className="px-4 md:px-8 mx-auto container py-12">
         <div className="text-center mb-10">
           <h2 className="text-4xl font-bold text-accent mb-2">
-            Projects I've Built
+            Projects Ive Built
           </h2>
           <p className="text-[#97979e] max-w-2xl mx-auto">
             From frontend elegance to backend power — real projects, real stack.
