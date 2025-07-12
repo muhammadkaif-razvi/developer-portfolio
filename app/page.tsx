@@ -12,7 +12,7 @@ export default function Home() {
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Software Developer</span>
             <h1 className="text-4xl font-sans mb-6">
-              Hi, I'm <br />{" "}
+              Hi, Im <br />{" "}
               <span className="text-accent">muhammad Kaif Razvi</span>
             </h1>
             <p className="max-w-[540px] mb-9 text-white/80">

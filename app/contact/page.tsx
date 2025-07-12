@@ -1,8 +1,6 @@
 import { auth, signIn, signOut } from "@/auth";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { toast } from "sonner";
+
 import {
   Card,
   CardHeader,
@@ -10,29 +8,10 @@ import {
   CardDescription,
   CardContent,
 } from "@/components/ui/card";
-import SendMessageButton from "@/components/ui/uis/sendmsg";
+
 import { ContactForm } from "@/components/ui/uis/contactpageform";
 
-async function sendContactEmail(formData: any) {
-  "use server";
-  const { name, subject, message, email } = Object.fromEntries(formData);
 
-  const nodemailer = require("nodemailer");
-  const transporter = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-      user: process.env.SMTP_USER,
-      pass: process.env.SMTP_PASS,
-    },
-  });
-
-  await transporter.sendMail({
-    from: process.env.SMTP_USER,
-    to: "muhammadkaifrazwi@gmail.com",
-    subject: `Portfolio Message: ${subject}`,
-    text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
-  });
-}
 
 const ContactPage = async () => {
   const session = await auth();
@@ -44,7 +23,7 @@ const ContactPage = async () => {
           <CardHeader>
             <CardTitle>Contact Me</CardTitle>
             <CardDescription className="text-[#97979e]">
-              Reach out and I'll get back to you soon.
+              Reach out and Ill get back to you soon.
             </CardDescription>
           </CardHeader>
           <CardContent>
