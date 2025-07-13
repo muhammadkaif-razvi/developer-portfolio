@@ -25,7 +25,6 @@ import {
   CreditCard,
 } from "lucide-react";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { useRouter } from "next/navigation";
 
 const about = {
   title: "About Me",

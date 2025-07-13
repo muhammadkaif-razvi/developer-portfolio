@@ -45,7 +45,7 @@ export function ContactForm({ userEmail }: { userEmail: string }) {
 
   return (
     <form action={formAction} className="space-y-4 font-mono">
-      <Input disabled name="email" value={userEmail} />
+      <Input readOnly name="email" value={userEmail} />
       <Input name="name" placeholder="Your Name" required />
       <select name="subject" required className="w-full p-2 rounded-md border">
         <option className="bg-[#27272c]  font-jetbrains-mono  text-white" value="">Select Subject</option>
