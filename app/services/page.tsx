@@ -97,7 +97,7 @@ const ServicesPage = () => {
                 type: 'spring'
               }}
             >
-              <Card className="hover:shadow-xl transition-shadow duration-300 h-full">
+              <Card className="hover:shadow-xl border-0 transition-shadow duration-300 h-full bg-[#27272c] ">
                 <CardHeader className="flex flex-row items-center gap-4">
                   <div className="p-2 rounded-full bg-accent/10 text-accent">
                     <Icon className="w-6 h-6" />
@@ -105,7 +105,7 @@ const ServicesPage = () => {
                   <CardTitle className="text-lg">{service.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground">{service.description}</p>
+                  <p className="text-sm text-[#97979e]">{service.description}</p>
                 </CardContent>
               </Card>
             </motion.div>

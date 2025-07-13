@@ -44,14 +44,14 @@ export function ContactForm({ userEmail }: { userEmail: string }) {
   }, [state]);
 
   return (
-    <form action={formAction} className="space-y-4">
+    <form action={formAction} className="space-y-4 font-mono">
       <Input disabled name="email" value={userEmail} />
       <Input name="name" placeholder="Your Name" required />
-      <select name="subject" required className="w-full p-2 rounded-md">
-        <option value="">Select Subject</option>
-        <option value="general">General</option>
-        <option value="project">Project</option>
-        <option value="collab">Collaboration</option>
+      <select name="subject" required className="w-full p-2 rounded-md border">
+        <option className="bg-[#27272c]  font-jetbrains-mono  text-white" value="">Select Subject</option>
+        <option className="bg-[#27272c] font-jetbrains-mono text-white" value="general">General</option>
+        <option className="bg-[#27272c] font-jetbrains-mono text-white" value="project">Project</option>
+        <option className="bg-[#27272c] font-jetbrains-mono text-white" value="collab">Collaboration</option>
       </select>
       <Textarea name="message" placeholder="Your Message" required />
 

@@ -77,7 +77,7 @@ const WorkPage = () => {
               viewport={{ once: true }}
             >
               {/* Image/Carousel */}
-              <div className="w-full lg:w-1/2">
+              <div className="w-full lg:w-1/2 border">
                 <Carousel>
                   <CarouselContent>
                     {project.images.map((img, i) => (
@@ -114,7 +114,7 @@ const WorkPage = () => {
                         <Badge
                           key={i}
                           variant="default"
-                          className="text-xs  "
+                          className="text-xs pt-1 "
                         >
                           {tech}
                         </Badge>

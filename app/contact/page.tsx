@@ -11,13 +11,11 @@ import {
 
 import { ContactForm } from "@/components/ui/uis/contactpageform";
 
-
-
 const ContactPage = async () => {
   const session = await auth();
 
   return (
-    <div className="max-w-2xl mx-auto mt-10 p-6">
+    <div className="max-w-2xl mx-auto mt-10 p-6 ">
       {session?.user ? (
         <Card className="bg-[#27272c] shadow-lg border-0 text-accent">
           <CardHeader>
