@@ -1,0 +1,10 @@
+# Block Googlebot from a specific directory
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+# Allow all other crawlers to access the entire site (default behavior, could be omitted)
+User-agent: *
+Allow: /
+
+# Specify the location of your sitemap
+Sitemap: https://www.muhammadkaifrazvi.xyz/sitemap.xml
