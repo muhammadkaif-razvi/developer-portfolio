@@ -9,10 +9,12 @@ export const Header = () => {
   return (
     <header className="xl:py-8 py-4 xl:p-12  font-jetbrains-mono">
       <div className="container mx-auto flex justify-between items-center px-2">
+      
         <Link href="/">
           <h1 className="text-4xl font-semibold">
             Kaif Razvi<span className="text-accent">.</span>
           </h1>
+          
         </Link>
         {/* des */}
         <div className="hidden xl:flex items-center gap-10">

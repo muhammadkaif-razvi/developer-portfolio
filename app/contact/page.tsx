@@ -63,6 +63,24 @@ const ContactPage = async () => {
           </Button>
         </div>
       )}
+      <div className="relative w-full pt-[100%] shadow-md mt-6 mb-4 rounded-lg overflow-hidden will-change-transform">
+        <iframe
+          loading="lazy"
+          className="absolute w-full h-full top-0 left-0 border-none p-0 m-0"
+          src="https://www.canva.com/design/DAGtCeMXCRY/zaamMULvHux9_CB7bIRr6A/view?embed"
+          allowFullScreen
+          allow="fullscreen"
+        ></iframe>
+      </div>
+      <a
+        href="https://www.canva.com/design/DAGtCeMXCRY/zaamMULvHux9_CB7bIRr6A/view?utm_content=DAGtCeMXCRY&utm_campaign=designshare&utm_medium=embeds&utm_source=link"
+        target="_blank"
+        rel="noopener"
+        className="text-blue-600 hover:underline"
+      >
+        Design
+      </a>{" "}
+      <span className="text-gray-700">by Muhammad Kaif Razvi</span>
     </div>
   );
 };
