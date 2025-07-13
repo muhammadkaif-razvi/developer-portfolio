@@ -2,7 +2,7 @@
 User-agent: Googlebot
 Disallow: /nogooglebot/
 
-# Allow all other crawlers to access the entire site (default behavior, could be omitted)
+# Allow all other crawlers to access the entire site
 User-agent: *
 Allow: /
 
