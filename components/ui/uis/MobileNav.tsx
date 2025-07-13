@@ -14,8 +14,6 @@ import {
 import { AlignRightIcon } from "lucide-react";
 import Link from "next/link";
 
-
-
 import { Button } from "../button";
 
 const links = [
@@ -49,38 +47,39 @@ const MobileNav = () => {
         <AlignRightIcon className="text-[32px] text-accent" />
       </SheetTrigger>
       <SheetContent className="flex flex-col">
-        <SheetHeader>
-          <SheetTitle>Are you absolutely sure?</SheetTitle>
+        <SheetHeader className="mt-3">
+          <SheetTitle>
+            <Link href={"/"}>
+              <h1 className="text-4xl font-semibold">
+                Kaif Razvi <span className="text-accent">.</span>
+              </h1>
+            </Link>
+          </SheetTitle>
           <SheetDescription>
-            This action cannot be undone. This will permanently delete your
-            account and remove your data from our servers.
+            Explore a curated collection of my web development projects and
+            technical skills.
           </SheetDescription>
         </SheetHeader>
-        <div className=" mb-8 text-center text-2xl">
-          <Link href={"/"}>
-            <h1 className="text-4xl font-semibold">
-              Kaif Razvi <span className="text-accent">.</span>
-            </h1>
-          </Link>
-        </div>
+
         <nav className="flex flex-col justify-center items-center gap-8 text-2xl">
           {links.map((link, index) => {
             return (
-              <Link
-                key={index}
-                href={link.href}
-                className={`hover:text-accent-hover ${
-                  link.href === pathneme &&
-                  "text-accent hover:text-accent-hover border-b-2 border-accent hover:border-accent-hover transition-all"
-                }`}
-              >
-                {link.name}
-              </Link>
+              <SheetClose asChild>
+                <Link
+                  key={index}
+                  href={link.href}
+                  className={`hover:text-accent-hover ${
+                    link.href === pathneme &&
+                    "text-accent hover:text-accent-hover border-b-2 border-accent hover:border-accent-hover transition-all"
+                  }`}
+                >
+                  {link.name}
+                </Link>
+              </SheetClose>
             );
           })}
         </nav>
         <SheetFooter>
-          <Button type="submit">Save changes</Button>
           <SheetClose asChild>
             <Button variant="outline">Close</Button>
           </SheetClose>
