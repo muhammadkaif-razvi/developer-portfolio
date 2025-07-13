@@ -64,18 +64,18 @@ const MobileNav = () => {
         <nav className="flex flex-col justify-center items-center gap-8 text-2xl">
           {links.map((link, index) => {
             return (
-              <Link
-                key={index}
-                href={link.href}
-                className={`hover:text-accent-hover ${
-                  link.href === pathneme &&
-                  "text-accent hover:text-accent-hover border-b-2 border-accent hover:border-accent-hover transition-all"
-                }`}
-              >
-                <SheetClose asChild key={index}>
+              <SheetClose asChild key={index}>
+                <Link
+                  key={index}
+                  href={link.href}
+                  className={`hover:text-accent-hover ${
+                    link.href === pathneme &&
+                    "text-accent hover:text-accent-hover border-b-2 border-accent hover:border-accent-hover transition-all"
+                  }`}
+                >
                   {link.name}
-                </SheetClose>
-              </Link>
+                </Link>
+              </SheetClose>
             );
           })}
         </nav>
