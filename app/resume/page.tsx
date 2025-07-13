@@ -108,13 +108,7 @@ const skills = {
   ],
 };
 
-const reloadPage = () => {
-  window.location.reload();
-};
-
-
 const ResumePage = () => {
-  const router = useRouter()
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -130,27 +124,27 @@ const ResumePage = () => {
         >
           {/* Tabs Sidebar */}
 
-          <TabsList className="w-full xl:mt-46 max-w-full xl:max-w-[200px] bg-primary rounded-xl flex xl:flex-col gap-2 xl:gap-3 items-center xl:items-start p-2">
-            <TabsTrigger   onClick={()=> router.refresh}
-              className="bg-[#27272c] w-full py-3  xl:py-6  px-4 text-accent-foreground text-sm hover:bg-accent-hover rounded-md text-center"
+          <TabsList className="w-full xl:mt-46 max-w-full xl:max-w-[200px] bg-primary rounded-xl sm:flex  xl:flex-col gap-2 xl:gap-3 items-center xl:items-start p-2 grid grid-cols-2 mb-18 sm:mb-2">
+            <TabsTrigger
+              className="bg-[#27272c] w-full py-5  xl:py-6  px-4  text-sm hover:bg-accent-hover rounded-md text-center"
               value="about"
             >
               About
             </TabsTrigger>
-            <TabsTrigger   onClick={reloadPage}
-              className="bg-[#27272c] w-full py-3  xl:py-6 px-4 text-accent-foreground text-sm hover:bg-accent-hover rounded-md text-center"
+            <TabsTrigger
+              className="bg-[#27272c] w-full py-5  xl:py-6 px-4  text-sm hover:bg-accent-hover rounded-md text-center"
               value="experience"
             >
               Experience
             </TabsTrigger>
-            <TabsTrigger   onClick={reloadPage}
-              className="bg-[#27272c] w-full py-3  xl:py-6  px-4 text-accent-foreground text-sm hover:bg-accent-hover rounded-md text-center"
+            <TabsTrigger
+              className="bg-[#27272c] w-full py-5  xl:py-6  px-4  text-sm hover:bg-accent-hover rounded-md text-center"
               value="education"
             >
               Education
             </TabsTrigger>
-            <TabsTrigger   onClick={reloadPage}
-              className="bg-[#27272c] w-full py-3 xl:py-6 px-4 text-accent-foreground text-sm hover:bg-accent-hover rounded-md text-center"
+            <TabsTrigger
+              className="bg-[#27272c] w-full py-5 xl:py-6 px-4  text-sm hover:bg-accent-hover rounded-md text-center"
               value="skills"
             >
               Skills
@@ -161,7 +155,7 @@ const ResumePage = () => {
             <div className="flex-1 ">
               {/* About Tab */}
               <TabsContent className="w-full" value="about">
-                <h2 className="text-3xl font-bold mb-4 text-accent">
+                <h2 className="text-3xl font-bold mb-4 ">
                   {about.title}
                 </h2>
                 <p className="text-[#97979e] mb-6">{about.description}</p>
@@ -176,7 +170,9 @@ const ResumePage = () => {
                         <p className="text-sm text-[#97979e]">
                           {item.fieldName}
                         </p>
-                        <p className="font-medium text-white">{item.fieldValue}</p>
+                        <p className="font-medium text-white">
+                          {item.fieldValue}
+                        </p>
                       </div>
                     </Card>
                   ))}
@@ -264,7 +260,9 @@ const ResumePage = () => {
                       className="flex items-center gap-4 p-4 shadow-sm border-0"
                     >
                       <skill.icon className="text-accent w-5 h-5" />
-                      <span className="font-medium text-[#97979e] text-sm">{skill.name}</span>
+                      <span className="font-medium text-[#97979e] text-sm">
+                        {skill.name}
+                      </span>
                     </Card>
                   ))}
                 </div>
