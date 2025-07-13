@@ -22,13 +22,16 @@ export default function Home() {
               take pictures.
             </p>
             <div className="flex flex-col xl:flex-row items-center  gap-4">
-              <Button
-                variant={"outline"}
-                className="text-accent hover:text-accent-hover border-accent hover:border-accent-hover rounded-full uppercase flex items-center gap-2 py-5"
-              >
-                Download cv
-                <Download className="text-xl" />
-              </Button>
+           <a href="/Muhammad_Kaif_Razvi_Resume.pdf" download>
+  <Button
+    variant={"outline"}
+    className="text-accent hover:text-accent-hover border-accent hover:border-accent-hover rounded-full uppercase flex items-center gap-2 py-5"
+  >
+    Download CV
+    <Download className="text-xl" />
+  </Button>
+</a>
+
               <div className="mb-8 xl:mb-0">
                 <Social containerst="flex gap-6" iconst="w-9 h-9 " />
               </div>
