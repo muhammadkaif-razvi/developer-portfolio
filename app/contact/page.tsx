@@ -13,6 +13,14 @@ import { ContactForm } from "@/components/ui/uis/contactpageform";
 // ✅ 1. METADATA for SEO
 export const metadata: Metadata = {
   title: "Contact | Muhammad Kaif Razvi - Full Stack Developer",
+  robots: {
+    index: true, // Allow search engines to index this page
+    follow: true, // Allow search engines to follow links on this page
+    nocache: false, // Allow caching of the page (true = disallow)
+    noimageindex: false, // Allow image indexing (true = disallow)
+    nosnippet: false, // Allow snippets in search results (true = disallow)
+  },
+
   description:
     "Get in touch with Muhammad Kaif Razvi, a full-stack web developer. Reach out for web development, freelancing, or collaboration.",
   keywords: [

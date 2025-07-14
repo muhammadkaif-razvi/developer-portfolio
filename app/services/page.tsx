@@ -2,6 +2,13 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Services | Muhammad Kaif Razvi - Full Stack Developer",
+    robots: {
+    index: true, // Allow search engines to index this page
+    follow: true, // Allow search engines to follow links on this page
+    nocache: false, // Allow caching of the page (true = disallow)
+    noimageindex: false, // Allow image indexing (true = disallow)
+    nosnippet: false, // Allow snippets in search results (true = disallow)
+  },
   description:
     "Full-stack services by Muhammad Kaif Razvi, including scalable microservices, multi-vendor e-commerce, Razorpay integration, Kafka events, secure authentication, and CI/CD deployment with Docker and GitHub Actions.",
   keywords: [

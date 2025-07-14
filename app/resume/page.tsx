@@ -1,9 +1,16 @@
-import type { Metadata } from "next";
 import ResumeCard from "@/components/ui/uis/ResumeCard";
+import type { Metadata } from "next";
 
 // ✅ SEO METADATA
 export const metadata: Metadata = {
   title: "Resume | Muhammad Kaif Razvi - Full Stack Developer",
+  robots: {
+    index: true, // Allow search engines to index this page
+    follow: true, // Allow search engines to follow links on this page
+    nocache: false, // Allow caching of the page (true = disallow)
+    noimageindex: false, // Allow image indexing (true = disallow)
+    nosnippet: false, // Allow snippets in search results (true = disallow)
+  },
   description:
     "View the professional resume of Muhammad Kaif Razvi, a full-stack web developer skilled in Next.js, Prisma, Tailwind CSS, Nx, Docker, Kafka, and scalable web architecture.",
   keywords: [
@@ -88,7 +95,6 @@ const jsonLd = {
 const ResumePage = () => {
   return (
     <>
-      {/* ✅ Structured data for Google */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
