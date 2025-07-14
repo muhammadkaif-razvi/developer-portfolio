@@ -34,7 +34,7 @@ const socialMedia = [
   {
     name: "YouTube",
     icon: Youtube, // Directly use the imported Lucide component
-    path: "https://www.youtube.com/yourprofile", // Corrected YouTube path
+    path: "https://youtube.com/@muhammadkaifrazvi", // Corrected YouTube path
   },
   // {
   //   name: "TikTok",

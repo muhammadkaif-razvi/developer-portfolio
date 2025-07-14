@@ -83,6 +83,8 @@ export const metadata: Metadata = {
       url: "https://www.muhammadkaifrazvi.xyz",
     },
   ],
+  manifest: "/manifest.webmanifest",
+  themeColor: "#f9b449",
   metadataBase: new URL("https://www.muhammadkaifrazvi.xyz"),
   openGraph: {
     title: "Muhammad Kaif Razvi | Full Stack Developer",
@@ -117,9 +119,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`leading-loose px-2 font-jetbrains-mono ${geistSans.variable} ${geistMono.variable} ${jetbrainsMono.variable} antialiased`}
-      >
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/manifest.webmanifest" />
+        <meta name="theme-color" content="#f9b449" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -138,7 +142,10 @@ export default function RootLayout({
             }),
           }}
         />
-
+      </head>
+      <body
+        className={`leading-loose px-2 font-jetbrains-mono ${geistSans.variable} ${geistMono.variable} ${jetbrainsMono.variable} antialiased`}
+      >
         <Header />
         <StairTransition />
         <PageTransitionEvent>{children}</PageTransitionEvent>
