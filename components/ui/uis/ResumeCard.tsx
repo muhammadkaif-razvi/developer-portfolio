@@ -123,7 +123,7 @@ const ResumeCard = () => {
         >
           {/* Tabs Sidebar */}
 
-          <TabsList className="w-full xl:mt-46 max-w-full xl:max-w-[200px] bg-primary rounded-xl sm:flex  xl:flex-col gap-2 xl:gap-3 items-center xl:items-start p-2 grid grid-cols-2 mb-18 sm:mb-2">
+          <TabsList className="w-full xl:mt-46 max-w-full xl:max-w-[200px] bg-primary rounded-xl sm:flex  xl:flex-col gap-2 xl:gap-3 items-center xl:items-start p-2 grid grid-cols-2 mb-22 sm:mb-2 ">
             <TabsTrigger
               className="bg-[#27272c] w-full py-5  xl:py-6  px-4  text-sm hover:bg-accent-hover rounded-md text-center"
               value="about"

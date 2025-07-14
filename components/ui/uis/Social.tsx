@@ -29,7 +29,7 @@ const socialMedia = [
   {
     name: "LinkedIn",
     icon: Linkedin, // Directly use the imported Lucide component
-    path: "https://www.linkedin.com/in/yourprofile", // Replace with the actual path
+    path: "https://www.linkedin.com/in/muhammad-kaif-razvi-143-webdev/", // Replace with the actual path
   },
   {
     name: "YouTube",
