@@ -35,7 +35,7 @@ const projects = [
       "Built with React, Tailwind, Express. Smooth transitions, contact form, and responsive layout.",
     images: ["/f1.png", "/f2.png", "/f3.png"],
     tech: ["Nextjs", "Tailwind CSS", "React", "Shadcn UI", "Framer Motion"],
-    github: "https://github.com/yourusername/portfolio",
+    github: "https://github.com/muhammadkaif-razvi/developer-portfolio",
   },
   {
     title: "Multi-Vendor E-commerce (WIP)",
@@ -43,7 +43,7 @@ const projects = [
       "Ongoing platform using NX, Kafka, Redis, Prisma, and Next.js. Multi-seller payments, analytics, etc.",
     images: ["/projects/ecom-1.png", "/projects/ecom-2.png"],
     tech: ["NX", "Kafka", "Redis", "MongoDB", "Next.js", "Prisma"],
-    github: "https://github.com/yourusername/ecommerce",
+    github: "https://github.com/muhammadkaif-razvi/ecommerce",
   },
 ];
 
