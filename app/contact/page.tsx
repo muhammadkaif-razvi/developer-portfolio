@@ -23,16 +23,7 @@ export const metadata: Metadata = {
 
   description:
     "Get in touch with Muhammad Kaif Razvi, a full-stack web developer. Reach out for web development, freelancing, or collaboration.",
-  keywords: [
-    "Contact Muhammad Kaif Razvi",
-    "Full Stack Developer Contact",
-    "Hire Full Stack Developer",
-    "Next.js Developer Contact",
-    "Freelance Web Developer India",
-    "React Tailwind Prisma Developer",
-    "Portfolio Contact Page",
-    "Developer Email Contact",
-  ],
+
   metadataBase: new URL("https://www.muhammadkaifrazvi.xyz"),
   openGraph: {
     title: "Contact | Muhammad Kaif Razvi - Full Stack Developer",

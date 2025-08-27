@@ -13,22 +13,7 @@ export const metadata: Metadata = {
   },
   description:
     "View the professional resume of Muhammad Kaif Razvi, a full-stack web developer skilled in Next.js, Prisma, Tailwind CSS, Nx, Docker, Kafka, and scalable web architecture.",
-  keywords: [
-    "Muhammad Kaif Razvi Resume",
-    "Full Stack Developer Resume",
-    "Next.js Resume",
-    "MERN Stack Developer CV",
-    "React Developer Resume",
-    "Prisma Developer CV",
-    "Tailwind CSS Developer",
-    "Nx Monorepo Developer",
-    "Docker Developer",
-    "Freelance Web Developer",
-    "Portfolio Resume",
-    "Full Stack Web Resume",
-    "Developer Resume India",
-    "Resume of Muhammad Kaif",
-  ],
+
   authors: [
     {
       name: "Muhammad Kaif Razvi",

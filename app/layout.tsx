@@ -25,58 +25,7 @@ export const metadata: Metadata = {
   title: "Muhammad Kaif Razvi | Full Stack Web Developer",
   description:
     "Portfolio of Muhammad Kaif Razvi, a full-stack web developer specializing in Next.js, Nx Monorepo, Tailwind CSS, ShadCN, Prisma, and MongoDB. Explore real-world projects with technologies like Kafka, Redis, Docker, Razorpay, Shiprocket, ImageKit, and AWS. Focused on building scalable, secure, and high-performance web applications with modern UI and clean architecture.",
-  keywords: [
-    // Roles
-    "Full Stack Developer",
-    "Next.js Developer",
-    "React Developer",
-    "MERN Stack Developer",
-    "TypeScript Developer",
-    "Nx Monorepo Developer",
-    "Node.js Developer",
-    "Express Developer",
-    "Frontend Developer",
-    "Backend Developer",
 
-    // Tech stack
-    "Tailwind CSS Developer",
-    "ShadCN Developer",
-    "Prisma Developer",
-    "MongoDB Developer",
-    "Kafka Developer",
-    "Redis Developer",
-    "Docker Developer",
-    "AWS Developer",
-    "ImageKit Developer",
-    "Razorpay Developer",
-    "Shiprocket Developer",
-    "Postman Tester",
-    "Swagger UI Developer",
-    "Jest Testing",
-    "TensorFlow.js Developer",
-
-    // SEO & Portfolio
-    "Web Developer Portfolio",
-    "Next.js Portfolio Website",
-    "Developer Portfolio India",
-    "Responsive Developer Portfolio",
-    "Freelance Web Developer",
-
-    // Personal Branding
-    "Muhammad Kaif Razvi",
-    "Muhammad Kaif Portfolio",
-    "Muhammad Kaif Razvi Developer",
-
-    // Bonus Keywords
-    "Authentication with Auth.js",
-    "REST API Developer",
-    "GraphQL Developer",
-    "Microservices Developer",
-    "SaaS Developer",
-    "E-commerce Developer",
-    "Payment Integration Developer",
-    "Cloud Developer",
-  ],
   authors: [
     {
       name: "Muhammad Kaif Razvi",

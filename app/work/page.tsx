@@ -4,7 +4,7 @@ import WorkCard from "@/components/ui/uis/WorkCard";
 // ✅ 1. SEO Metadata
 export const metadata: Metadata = {
   title: "Projects | Muhammad Kaif Razvi - Full Stack Developer",
-    robots: {
+  robots: {
     index: true, // Allow search engines to index this page
     follow: true, // Allow search engines to follow links on this page
     nocache: false, // Allow caching of the page (true = disallow)
@@ -13,23 +13,7 @@ export const metadata: Metadata = {
   },
   description:
     "Explore real-world projects built by Muhammad Kaif Razvi using Next.js, Tailwind CSS, Prisma, MongoDB, Kafka, Docker, and more. Full stack portfolio featuring scalable apps and e-commerce systems.",
-  keywords: [
-    "Full Stack Projects",
-    "Muhammad Kaif Razvi Projects",
-    "Developer Portfolio Projects",
-    "Next.js Projects",
-    "Tailwind CSS Portfolio",
-    "MongoDB Portfolio",
-    "Kafka Developer Portfolio",
-    "Docker Developer Projects",
-    "E-commerce Project Next.js",
-    "Microservices Projects",
-    "Full Stack Portfolio India",
-    "Open Source Developer",
-    "Freelance Projects Web",
-    "ShadCN UI Projects",
-    "Nx Monorepo Portfolio",
-  ],
+
   metadataBase: new URL("https://www.muhammadkaifrazvi.xyz"),
   openGraph: {
     title: "Projects | Muhammad Kaif Razvi - Full Stack Developer",

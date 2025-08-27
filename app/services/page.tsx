@@ -11,31 +11,7 @@ export const metadata: Metadata = {
   },
   description:
     "Full-stack services by Muhammad Kaif Razvi, including scalable microservices, multi-vendor e-commerce, Razorpay integration, Kafka events, secure authentication, and CI/CD deployment with Docker and GitHub Actions.",
-  keywords: [
-    "Full Stack Developer Services",
-    "Next.js Developer",
-    "Express Backend Developer",
-    "E-commerce Developer",
-    "Microservices Developer",
-    "Tailwind CSS Developer",
-    "NX Monorepo Developer",
-    "ShadCN UI Developer",
-    "Prisma Developer",
-    "MongoDB Developer",
-    "Razorpay Integration",
-    "Shiprocket API Developer",
-    "Kafka Developer",
-    "Redis Session Management",
-    "Clerk Auth Integration",
-    "Secure Auth Developer",
-    "PostgreSQL Developer",
-    "Docker CI/CD Pipelines",
-    "Vercel Deployment",
-    "GitHub Actions",
-    "Framer Motion UI Developer",
-    "API Developer India",
-    "Muhammad Kaif Razvi Services",
-  ],
+
   authors: [
     {
       name: "Muhammad Kaif Razvi",
