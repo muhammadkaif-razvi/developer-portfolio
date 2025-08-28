@@ -68,30 +68,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/manifest.webmanifest" />
-        <meta name="theme-color" content="#f9b449" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
-              name: "Muhammad Kaif Razvi",
-              url: "https://www.muhammadkaifrazvi.xyz",
-              jobTitle: "Full Stack Web Developer",
-              sameAs: [
-                "https://github.com/muhammadkaif-razvi",
-                "https://www.linkedin.com/in/muhammad-kaif-razvi-143-webdev",
-                "https://x.com/kaifrazavi_",
-                "https://www.muhammadkaifrazvi.xyz",
-              ],
-            }),
-          }}
-        />
-      </head>
+  
       <body
         className={`leading-loose px-2 font-jetbrains-mono ${geistSans.variable} ${geistMono.variable} ${jetbrainsMono.variable} antialiased`}
       >

@@ -1,5 +1,4 @@
 "use client";
-import { motion } from "framer-motion";
 import React from "react";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
@@ -25,6 +24,7 @@ import {
   CreditCard,
 } from "lucide-react";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import MotionDiv from "@/components/motion.div";
 
 const about = {
   title: "About Me",
@@ -109,13 +109,7 @@ const skills = {
 
 const ResumeCard = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{
-        opacity: 1,
-        transition: { delay: 1.0, duration: 2.8, ease: "easeInOut" },
-      }}
-    >
+    <MotionDiv>
       <section className=" px-2 md:px-4  mx-auto container ">
         <Tabs
           defaultValue="skills"
@@ -268,7 +262,7 @@ const ResumeCard = () => {
           </ScrollArea>
         </Tabs>
       </section>
-    </motion.div>
+    </MotionDiv>
   );
 };
 
