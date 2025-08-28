@@ -91,37 +91,10 @@ export const metadata: Metadata = {
   ],
 };
 
-// ✅ 2. JSON-LD Schema for Portfolio Projects
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "CreativeWork",
-  name: "Full Stack Web Projects - Muhammad Kaif Razvi",
-  creator: {
-    "@type": "Person",
-    name: "Muhammad Kaif Razvi",
-    url: "https://www.muhammadkaifrazvi.xyz",
-    sameAs: [
-      "https://github.com/muhammadkaif-razvi",
-      "https://linkedin.com/in/muhammad-kaif-razvi-143-webdev",
-      "https://x.com/kaifrazavi_",
-    ],
-  },
-  description:
-    "A showcase of real-world web development projects created by Muhammad Kaif Razvi using technologies like Next.js, Tailwind CSS, Prisma, MongoDB, Kafka, Docker, Redis, and more.",
-  url: "https://www.muhammadkaifrazvi.xyz/work",
-  headline: "Project Portfolio | Muhammad Kaif Razvi",
-  datePublished: "2024-01-01",
-  inLanguage: "en",
-};
-
 // ✅ 3. Work Page Component
 const WorkPage = () => {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
       <MotionDiv>
         <section className="px-4 md:px-8 mx-auto container py-12">
           <div className="text-center mb-10">

@@ -57,26 +57,7 @@ export const metadata: Metadata = {
   },
 };
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  name: "Full Stack Web Development Services",
-  provider: {
-    "@type": "Person",
-    name: "Muhammad Kaif Razvi",
-    url: "https://www.muhammadkaifrazvi.xyz",
-    sameAs: [
-      "https://github.com/muhammadkaif-razvi",
-      "https://www.linkedin.com/in/muhammad-kaif-razvi-143-webdev",
-      "https://x.com/kaifrazavi_",
-    ],
-  },
-  areaServed: "Worldwide",
-  description:
-    "Full-stack services by Muhammad Kaif Razvi including e-commerce, microservices, APIs, Razorpay, Kafka, Docker, Redis, and more.",
-  serviceType: "Full Stack Web Development",
-  url: "https://www.muhammadkaifrazvi.xyz/services",
-};
+
 const services = [
   {
     title: "Microservices Architecture",
@@ -132,11 +113,7 @@ const services = [
 const ServicesPage = () => {
   return (
     <>
-      {/* ✅ JSON-LD SCRIPT TAG */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+    
       <section className="pb-2 px-4 md:px-8 bg-background text-foreground">
         <div className="max-w-6xl mx-auto text-center mb-6">
           <h2 className="text-4xl font-bold mb-4">What I Offer</h2>

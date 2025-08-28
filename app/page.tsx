@@ -6,7 +6,7 @@ import { Download } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Muhammad Kaif Razvi | Full Stack Web Developer",
+  title: "Muhammad Kaif Razvi | Full Stack Web Developer | I help businesses build scalable web applications",
   description:
     "Portfolio of Muhammad Kaif Razvi, a full-stack web developer specializing in Next.js, Nx Monorepo, Tailwind CSS, ShadCN, Prisma, and MongoDB. Explore real-world projects with technologies like Kafka, Redis, Docker, Razorpay, Shiprocket, ImageKit, and AWS. Focused on building scalable, secure, and high-performance web applications with modern UI and clean architecture.",
 

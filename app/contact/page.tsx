@@ -60,36 +60,10 @@ export const metadata: Metadata = {
 const ContactPage = async () => {
   const session = await auth();
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "ContactPage",
-    name: "Contact Muhammad Kaif Razvi",
-    url: "https://www.muhammadkaifrazvi.xyz/contact",
-    mainEntity: {
-      "@type": "Person",
-      name: "Muhammad Kaif Razvi",
-      jobTitle: "Full Stack Developer",
-      url: "https://www.muhammadkaifrazvi.xyz",
-      sameAs: [
-        "https://github.com/muhammadkaif-razvi",
-        "https://linkedin.com/in/muhammad-kaif-razvi-143-webdev",
-        "https://x.com/kaifrazavi_",
-      ],
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Hyderabad",
-        addressCountry: "India",
-      },
-    },
-  };
 
   return (
     <div className="max-w-2xl mx-auto mt-10 p-6 ">
-      {/* ✅ JSON-LD Structured Data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+   
       {session?.user ? (
         <Card className="bg-[#27272c] shadow-lg border-0 text-accent">
           <CardHeader>
