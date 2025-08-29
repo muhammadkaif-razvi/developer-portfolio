@@ -109,14 +109,7 @@ const skills = {
 
 // ✅ SEO METADATA
 export const metadata: Metadata = {
-  title: "Resume | Muhammad Kaif Razvi - Full Stack Developer",
-  robots: {
-    index: true, // Allow search engines to index this page
-    follow: true, // Allow search engines to follow links on this page
-    nocache: false, // Allow caching of the page (true = disallow)
-    noimageindex: false, // Allow image indexing (true = disallow)
-    nosnippet: false, // Allow snippets in search results (true = disallow)
-  },
+  title: "Resume",
   description:
     "View the professional resume of Muhammad Kaif Razvi, a full-stack web developer skilled in Next.js, Prisma, Tailwind CSS, Nx, Docker, Kafka, and scalable web architecture.",
 

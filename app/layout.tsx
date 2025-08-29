@@ -5,6 +5,7 @@ import { Header } from "@/components/ui/uis/Header";
 import PageTransitionEvent from "@/components/ui/uis/PageTransition";
 import StairTransition from "@/components/ui/uis/StairTransition";
 import { Toaster } from "@/components/ui/sonner";
+import { description, title } from "@/constants/seo";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,42 +23,51 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Muhammad Kaif Razvi | Full Stack Web Developer",
-  description:
-    "Portfolio of Muhammad Kaif Razvi, a full-stack web developer specializing in Next.js, Nx Monorepo, Tailwind CSS, ShadCN, Prisma, and MongoDB. Explore real-world projects with technologies like Kafka, Redis, Docker, Razorpay, Shiprocket, ImageKit, and AWS. Focused on building scalable, secure, and high-performance web applications with modern UI and clean architecture.",
-
+  title: {
+    default: title,
+    template: `%s | ${title}`,
+  },
+  description,
   authors: [
     {
       name: "Muhammad Kaif Razvi",
       url: "https://www.muhammadkaifrazvi.xyz",
     },
   ],
-  manifest: "/manifest.webmanifest",
-  themeColor: "black",
-  metadataBase: new URL("https://www.muhammadkaifrazvi.xyz"),
+  other: {
+    keywords:
+      "Muhammad Kaif Razvi, Best Full Stack Developer in Hyderabad, Web Developer in Hyderabad, Next.js Developer India, React Developer Hyderabad, Tailwind CSS Developer, ShadCN UI Expert, Prisma Developer, Express.js Developer, NX Monorepo Developer, SaaS Developer Hyderabad, E-commerce Developer Hyderabad, MERN Stack Developer India, Freelance Web Developer Hyderabad, Hire Web Developer Hyderabad, Software Developer Portfolio",
+  },
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_BASE_URL || "https://www.muhammadkaifrazvi.xyz"
+  ),
   openGraph: {
-    title: "Muhammad Kaif Razvi | Full Stack Developer",
-    description:
-      "Explore the modern portfolio of Muhammad Kaif Razvi — expert in Next.js, Prisma, Tailwind CSS, MongoDB, and more. Discover real-world web projects and clean UI/UX implementations.",
-    url: "https://www.muhammadkaifrazvi.xyz",
+    title,
+    description,
+    locale: "en_IN",
+    url:
+      process.env.NEXT_PUBLIC_BASE_URL || "https://www.muhammadkaifrazvi.xyz",
     siteName: "Muhammad Kaif Razvi Portfolio",
     images: [
       {
         url: "/f2.png",
         width: 1200,
         height: 630,
-        alt: "Portfolio of Muhammad Kaif Razvi",
+        alt: title,
       },
     ],
     type: "website",
   },
+  manifest: "/manifest.webmanifest",
   twitter: {
     card: "summary_large_image",
-    title: "Muhammad Kaif Razvi | Full Stack Developer",
-    description:
-      "Check out the portfolio of Muhammad Kaif Razvi — skilled in building full-stack apps with Next.js, Prisma, ShadCN, and more.",
+    title,
+    description,
     images: ["/f2.png"],
     creator: "@kaifrazavi_",
+  },
+  icons: {
+    icon: "/favicon.ico",
   },
 };
 
@@ -68,7 +78,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-  
       <body
         className={`leading-loose px-2 font-jetbrains-mono ${geistSans.variable} ${geistMono.variable} ${jetbrainsMono.variable} antialiased`}
       >

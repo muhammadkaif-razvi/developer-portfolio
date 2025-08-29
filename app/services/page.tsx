@@ -13,14 +13,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import PMotionDiv from "@/components/project-motion.div";
 
 export const metadata: Metadata = {
-  title: "Services | Muhammad Kaif Razvi - Full Stack Developer",
-  robots: {
-    index: true, // Allow search engines to index this page
-    follow: true, // Allow search engines to follow links on this page
-    nocache: false, // Allow caching of the page (true = disallow)
-    noimageindex: false, // Allow image indexing (true = disallow)
-    nosnippet: false, // Allow snippets in search results (true = disallow)
-  },
+  title: "Services",
+
   description:
     "Full-stack services by Muhammad Kaif Razvi, including scalable microservices, multi-vendor e-commerce, Razorpay integration, Kafka events, secure authentication, and CI/CD deployment with Docker and GitHub Actions.",
 
@@ -56,7 +50,6 @@ export const metadata: Metadata = {
     creator: "@kaifrazavi_",
   },
 };
-
 
 const services = [
   {
@@ -109,43 +102,39 @@ const services = [
   },
 ];
 
-
 const ServicesPage = () => {
   return (
-    <>
-    
-      <section className="pb-2 px-4 md:px-8 bg-background text-foreground">
-        <div className="max-w-6xl mx-auto text-center mb-6">
-          <h2 className="text-4xl font-bold mb-4">What I Offer</h2>
-          <p className="text-muted-foreground">
-            Full-stack services for scalable SaaS, e-commerce, and API
-            development.
-          </p>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((service, index) => {
-            const Icon = service.icon;
-            return (
-              <PMotionDiv key={index} index={index}>
-                <Card className="hover:shadow-xl border-0 transition-shadow duration-300 h-full bg-[#27272c] ">
-                  <CardHeader className="flex flex-row items-center gap-4">
-                    <div className="p-2 rounded-full bg-accent/10 text-accent">
-                      <Icon className="w-6 h-6" />
-                    </div>
-                    <CardTitle className="text-lg">{service.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-[#97979e]">
-                      {service.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              </PMotionDiv>
-            );
-          })}
-        </div>
-      </section>
-    </>
+    <section className="pb-2 px-4 md:px-8 bg-background text-foreground">
+      <div className="max-w-6xl mx-auto text-center mb-6">
+        <h2 className="text-4xl font-bold mb-4">What I Offer</h2>
+        <p className="text-muted-foreground">
+          Full-stack services for scalable SaaS, e-commerce, and API
+          development.
+        </p>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {services.map((service, index) => {
+          const Icon = service.icon;
+          return (
+            <PMotionDiv key={index} index={index}>
+              <Card className="hover:shadow-xl border-0 transition-shadow duration-300 h-full bg-[#27272c] ">
+                <CardHeader className="flex flex-row items-center gap-4">
+                  <div className="p-2 rounded-full bg-accent/10 text-accent">
+                    <Icon className="w-6 h-6" />
+                  </div>
+                  <CardTitle className="text-lg">{service.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-[#97979e]">
+                    {service.description}
+                  </p>
+                </CardContent>
+              </Card>
+            </PMotionDiv>
+          );
+        })}
+      </div>
+    </section>
   );
 };
 
