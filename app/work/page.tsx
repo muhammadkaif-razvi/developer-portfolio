@@ -9,13 +9,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github } from "lucide-react";
-import {
-  Dialog,
-  DialogTrigger,
-  DialogContent,
-  DialogTitle,
-  DialogHeader,
-} from "@/components/ui/dialog";
+
 import {
   Carousel,
   CarouselContent,
@@ -227,36 +221,7 @@ const WorkPage = () => {
                         </a>
                       </Button>
 
-                      <Dialog>
-                        <DialogTrigger asChild>
-                          <Button
-                            variant="ghost"
-                            className="text-sm text-white"
-                          >
-                            Project Details
-                          </Button>
-                        </DialogTrigger>
-                        <DialogContent className="bg-background border border-border max-w-2xl">
-                          <DialogHeader>
-                            <DialogTitle>{project.title}</DialogTitle>
-                          </DialogHeader>
-                          <p className="text-muted-foreground text-sm">
-                            {project.description}
-                          </p>
-                          <div className="grid grid-cols-2 gap-4 mt-4">
-                            {project.images.map((img, i) => (
-                              <Image
-                                key={i}
-                                src={img}
-                                alt={project.title}
-                                width={400}
-                                height={250}
-                                className="rounded-md w-full h-auto"
-                              />
-                            ))}
-                          </div>
-                        </DialogContent>
-                      </Dialog>
+                    
                     </div>
                   </CardContent>
                 </Card>
