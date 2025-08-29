@@ -50,16 +50,15 @@ const projects = [
     demo: "https://ecommarce-store-mamaearth.vercel.app/",
     github: "https://github.com/muhammadkaif-razvi/ecommarce-store-mama",
   },
-  // {
-  //   title: "Multi-Vendor E-commerce (WIP)",
-  //   description:
-  //     "Built with React, Tailwind, Express. Smooth transitions, contact form, and responsive layout.",
-  //   images: ["/f1.png", "/f2.png", "/f3.png"],
-  //   tech: ["Nextjs", "Tailwind CSS", "React", "Shadcn UI", "Framer Motion"],
-  //   demo: "https://admin.ecom-saas-micro.com",
-
-  //   github: "https://github.com/muhammadkaif-razvi/developer-portfolio",
-  // },
+  {
+    title: "🔐 auth.js Authentication System using next.js",
+    description:
+      "A secure, scalable auth solution built with Next.js, Tailwind CSS, and TypeScript. Features include Email + Phone OTP, 2FA for enhanced security, Social Logins (Google, GitHub) and Forgot Password Flow",
+    images: ["/auth1.png",],
+    tech: ["Nextjs", "Tailwind CSS", "React", "Shadcn UI", "Authjs","Prisma","PostgreSQL"],
+    demo: "https://nextjs-authantication.vercel.app/",
+    github: "https://github.com/muhammadkaif-razvi/nextjs-authantication",
+  },
   // {
   //   title: "Multi-Vendor E-commerce (WIP)",
   //   description:
@@ -220,8 +219,6 @@ const WorkPage = () => {
                           <Github className="w-4 h-4" /> GitHub
                         </a>
                       </Button>
-
-                    
                     </div>
                   </CardContent>
                 </Card>
