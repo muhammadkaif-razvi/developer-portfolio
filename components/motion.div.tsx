@@ -8,7 +8,7 @@ const MotionDiv = ({ children }: { children: React.ReactNode }) => {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { delay: 0.3, duration: 1.4, ease: "easeInOut" },
+        transition: { delay: 0.1, duration: 1.4, ease: "easeInOut" },
       }}
     >
       {children}
