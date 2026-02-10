@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     },
   ],
   manifest: "/manifest.webmanifest",
-  themeColor: "black",
+ 
   metadataBase: new URL("https://www.muhammadkaifrazvi.xyz"),
   openGraph: {
     title: "Muhammad Kaif Razvi | Full Stack Developer",
