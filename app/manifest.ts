@@ -3,7 +3,7 @@ import type { MetadataRoute } from 'next';
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'Muhammad Kaif Razvi Portfolio',
-    short_name: 'Kaif Razvi',
+    short_name: 'Kaif',
     description:
       'Official portfolio of Muhammad Kaif Razvi, full-stack web developer with expertise in Next.js, Tailwind CSS, Prisma, MongoDB, and scalable web architecture.',
     start_url: '/',
